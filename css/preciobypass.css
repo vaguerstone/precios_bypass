@@ -1,0 +1,112 @@
+body.modal-open {
+overflow: hidden;
+}
+
+body {
+background: #F79201;
+background: linear-gradient(to right, #F79201, #F79201);
+}
+.pricing .card {
+border: none;
+border-radius: 1rem;
+transition: all 0.2s;
+box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.pricing hr {
+margin: 1.5rem 0;
+}
+.pricing .card-title {
+margin: 0.5rem 0;
+font-size: 0.9rem;
+letter-spacing: .1rem;
+font-weight: bold;
+}
+.titulo {
+font-size: 3rem;
+margin: 0;
+color: white;
+}
+.pricing .card-price {
+font-size: 3rem;
+margin: 0;
+}
+.pricing .card-price .period {
+font-size: 0.8rem;
+}
+.pricing ul li {
+margin-bottom: 1rem;
+}
+.pricing .text-muted {
+opacity: 0.7;
+}
+.pricing .btn {
+font-size: 80%;
+border-radius: 5rem;
+letter-spacing: .1rem;
+font-weight: bold;
+padding: 1rem;
+opacity: 0.7;
+transition: all 0.2s;
+}
+/* Hover Effects on Card */
+@media (min-width: 992px) {
+.pricing .card:hover {
+margin-top: -.25rem;
+margin-bottom: .25rem;
+box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.pricing .card:hover .btn {
+opacity: 1;
+}
+}
+
+/* centered columns styles */
+.row-centered {
+text-align:center;
+}
+.col-centered {
+display:inline-block;
+float:none;
+/* reset the text-align */
+text-align:left;
+/* inline-block space fix */
+margin-right:-4px;
+}
+
+
+body
+  background:#f1f1f1;
+  font-family: 'Inconsolata', monospace;
+  font-weight:bold;
+  color:gray;
+  text-align:center;
+  -webkit-font-smoothing: antialiased;
+}
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10%;
+}
+.box{
+  padding:30px;
+  margin:2%;
+  background:white;
+  width:30%;
+  border:1px solid #d6d6d6;
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all; 
+}
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.98);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
